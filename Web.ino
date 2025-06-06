@@ -1,7 +1,11 @@
 /**********************************************************************
  * 2025 (Copyleft) Anton Polishchuk
  * ESP32 Well Water Pump project with Web Interface and WiFi.
- * Authtor Contact: gmail account: antonvp
+ * Authtor Contact: 📫 gmail account: antonvp
+ * DESCRIPTION:
+ * An ESP32-powered system designed to automate water well pump control
+ * and water tank management, ideal for cabins and cottages.
+ * Features a user-friendly WiFi web interface for seamless monitoring and control.
  * LICENSE:
  * This software is licensed under the MIT License.
  * Redistribution, modification, or forks must include this banner.
