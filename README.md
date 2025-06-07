@@ -41,3 +41,40 @@ The wiring diagram provides a detailed visual guide for setting up the hardware 
 
 [![Wiring Diagram](https://github.com/HG-Pilot/WellWaterPump/raw/main/docs/WiringDiagram.png)](https://github.com/HG-Pilot/WellWaterPump/blob/main/docs/WiringDiagram.png)
 
+## Web Interface
+
+The UI is composed of 4 pages, listed below:
+
+- **HOME**  
+  Provides a quick system overview and array of system control buttons.  
+  <p align="center">
+    <a href="https://github.com/HG-Pilot/WellWaterPump/blob/main/docs/%F0%9F%92%A7ESP32%20Program%20Home%F0%9F%92%A7.png">
+      <img src="https://github.com/HG-Pilot/WellWaterPump/blob/main/docs/%F0%9F%92%A7ESP32%20Program%20Home%F0%9F%92%A7.png" alt="HOME Page Screenshot">
+    </a>
+  </p>
+
+- **STATUS**  
+  Shows live values, system running config, error counters, temperature, and current data.  
+  <p align="center">
+    <a href="https://github.com/HG-Pilot/WellWaterPump/blob/main/docs/%F0%9F%92%A7ESP32%20Program%20Status%F0%9F%92%A7.png">
+      <img src="https://github.com/HG-Pilot/WellWaterPump/blob/main/docs/%F0%9F%92%A7ESP32%20Program%20Status%F0%9F%92%A7.png" alt="STATUS Page Screenshot">
+    </a>
+  </p>
+
+- **CONFIG**  
+  Provides a system startup configuration interface and factory reset option.  
+  <p align="center">
+    <a href="https://github.com/HG-Pilot/WellWaterPump/blob/main/docs/%F0%9F%92%A7ESP32%20Program%20Config%F0%9F%92%A7.png">
+      <img src="https://github.com/HG-Pilot/WellWaterPump/blob/main/docs/%F0%9F%92%A7ESP32%20Program%20Config%F0%9F%92%A7.png" alt="CONFIG Page Screenshot">
+    </a>
+  </p>
+
+- **LOGS**  
+  Displays logs from a 60KB logging circular buffer and allows users to clear and copy the logs.  
+  <p align="center">
+    <a href="https://github.com/HG-Pilot/WellWaterPump/blob/main/docs/%F0%9F%92%A7ESP32%20Program%20Logs%F0%9F%92%A7.png">
+      <img src="https://github.com/HG-Pilot/WellWaterPump/blob/main/docs/%F0%9F%92%A7ESP32%20Program%20Logs%F0%9F%92%A7.png" alt="LOGS Page Screenshot">
+    </a>
+  </p>
+
+The UI interface supports dark and light modes, optimized for both mobile and desktop versions.
