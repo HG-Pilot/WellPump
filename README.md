@@ -78,3 +78,49 @@ The UI is composed of 4 pages, listed below:
   </p>
 
 The UI interface supports dark and light modes, optimized for both mobile and desktop versions.
+
+
+## Program Function and Overview
+
+This program automates the control of a well water pump and water tank filling process using an ESP32 microcontroller.  
+Designed for off-grid cabins, cottages, or any water tank system.  
+The software integrates several features to ensure efficient operation, user convenience, and system safety:
+
+### Program Features
+
+- **Automated Pump Control**:  
+  - Operates based on tank water levels, well recovery intervals, and timed pumping cycles.  
+  - ESP32 hardware timer controls well recovery and pumping intervals.  
+  - Well recovery interval ensures adequate water replenishment before the next pump cycle.  
+  - Configurable desired tank water level using a ToF sensor (top-mounted; less distance = more water).  
+  - Pump cycles are timed according to your well's capacity.
+
+- **Enhanced System Feedback**:  
+  - Onboard RGBW LED displays the current operational state.  
+  - Logs align with state machine color states for intuitive monitoring.  
+  - Optional buzzer provides audible confirmation on state changes.  
+  - CT coil measures A/C side current draw (programmable for DC measurement).  
+  - Water temperature updated at intervals and pre-/post-pump cycles to display delta temperatures.  
+  - Displays approximate tank fill percentage for semi-circular tanks.  
+  - Tracks and displays system uptime.  
+  - Verbose logging of program states and errors with timestamps and color coding.  
+  - ADS calibration adjusts CT current value.  
+  - Dark and light UI modes ensure optimal readability on mobile and desktop devices.
+
+### Safety Features
+
+- **Pump Protection**:  
+  - Stuck pump relay detection logic uses a second relay for emergency pump disconnect.  
+  - Prevents overfilling with a critical water level check using a moisture sensor.  
+  - Overcurrent and undercurrent protection prevents pump burnout or dry running.  
+  - Hysteresis threshold avoids rapid pump cycling when the tank is nearly full.  
+  - Logs system events with a circular buffer for troubleshooting.
+
+### Connectivity Features
+
+- **WiFi Modes**:  
+  - Supports STA mode for internet-connected operation and AP mode as a fallback.  
+  - Web server (port 80) enables real-time data tracking, program control, and configuration.  
+  - NTP time synchronization in STA mode with support for time zones and DST.
+
+
