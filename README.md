@@ -34,3 +34,10 @@ If you find this project helpful and it serves you well, consider showing your a
     <img src="https://github.com/HG-Pilot/WellWaterPump/blob/main/docs/Pump.Logic.png" alt="Pump Logic" style="max-width:100%; height:auto;">
 </a>
 The error logic has since been updated and split into separate **Error States**. Each error condition now has its own dedicated state within the system's state machine for better clarity and manageability. Despite this structural change, the core functionality and error-handling mechanisms remain consistent with the original design.
+
+## Wiring Diagram
+
+The wiring diagram provides a detailed visual guide for setting up the hardware components of the system. Click on the image below to view it in full size.
+
+[![Wiring Diagram](https://github.com/HG-Pilot/WellWaterPump/raw/main/docs/WiringDiagram.png)](https://github.com/HG-Pilot/WellWaterPump/blob/main/docs/WiringDiagram.png)
+
