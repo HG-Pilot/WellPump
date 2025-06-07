@@ -83,44 +83,45 @@ The UI interface supports dark and light modes, optimized for both mobile and de
 ## Program Function and Overview
 
 This program automates the control of a well water pump and water tank filling process using an ESP32 microcontroller.  
-Designed for off-grid cabins, cottages, or any water tank system.  
-The software integrates several features to ensure efficient operation, user convenience, and system safety:
+It is designed for off-grid cabins, cottages, or any water tank system.  
+The software integrates multiple features to ensure efficient operation, user convenience, and system safety:
 
-### Program Features
+### Program Features:
 
-- **Automated Pump Control**:  
-  - Operates based on tank water levels, well recovery intervals, and timed pumping cycles.  
-  - ESP32 hardware timer controls well recovery and pumping intervals.  
-  - Well recovery interval ensures adequate water replenishment before the next pump cycle.  
-  - Configurable desired tank water level using a ToF sensor (top-mounted; less distance = more water).  
-  - Pump cycles are timed according to your well's capacity.
+- Automated pump control based on tank water levels, well recovery intervals, and timed pumping cycles
+- ESP32 hardware timer controls well recovery and pumping intervals
+- Well recovery interval allows well water to recover before the next pump cycle begins
+- Desired tank water level is configurable; the ToF sensor at the top indicates less distance equals more water
+- Pump cycles are timed based on your well capacity
+- Onboard RGBW LED displays the current operational state of the system
+- Logs align with State Machine color states and reflect the same LED colors
+- Buzzer, when enabled, provides audible confirmation at the start of each state
+- CT coil reads A/C side current draw and can be re-programmed to read DC as well
+- Water temperature is updated at intervals and recorded pre- and post-pump cycle to display the delta water temperature
+- System time is derived via NTP and supports time zones and DST
+- Approximate tank fill percentage is displayed for semi-circular tanks
+- System uptime is calculated and displayed
+- Program states and errors feature verbose logging, timestamping, and color coding
+- ADS calibration adjusts the CT current value
+- Dark and light UI modes ensure optimal readability on mobile and desktop devices
 
-- **Enhanced System Feedback**:  
-  - Onboard RGBW LED displays the current operational state.  
-  - Logs align with state machine color states for intuitive monitoring.  
-  - Optional buzzer provides audible confirmation on state changes.  
-  - CT coil measures A/C side current draw (programmable for DC measurement).  
-  - Water temperature updated at intervals and pre-/post-pump cycles to display delta temperatures.  
-  - Displays approximate tank fill percentage for semi-circular tanks.  
-  - Tracks and displays system uptime.  
-  - Verbose logging of program states and errors with timestamps and color coding.  
-  - ADS calibration adjusts CT current value.  
-  - Dark and light UI modes ensure optimal readability on mobile and desktop devices.
+### Safety Features:
 
-### Safety Features
+- Stuck pump relay detection logic uses a second relay for emergency pump disconnect
+- Overfilling is prevented with a critical water level check using a moisture sensor
+- Over- and under-current pump protection avoids burning out or dry-running the pump
+- Hysteresis threshold prevents rapid pump cycling when the tank is nearly full
+- System events are logged with a circular buffer, enabling review and troubleshooting
 
-- **Pump Protection**:  
-  - Stuck pump relay detection logic uses a second relay for emergency pump disconnect.  
-  - Prevents overfilling with a critical water level check using a moisture sensor.  
-  - Overcurrent and undercurrent protection prevents pump burnout or dry running.  
-  - Hysteresis threshold avoids rapid pump cycling when the tank is nearly full.  
-  - Logs system events with a circular buffer for troubleshooting.
+### Connectivity Features:
 
-### Connectivity Features
-
-- **WiFi Modes**:  
-  - Supports STA mode for internet-connected operation and AP mode as a fallback.  
-  - Web server (port 80) enables real-time data tracking, program control, and configuration.  
-  - NTP time synchronization in STA mode with support for time zones and DST.
+- Two WiFi modes: STA (if configured) and AP (as a fallback or if STA is disabled)
+- Web server on port 80 provides real-time data tracking, program control, and configuration
+- NTP time synchronization operates in STA mode when connected to the internet
 
 
+## Acknowledgments
+
+This extensive project wouldn’t have been possible without the incredible support and patience of my wonderful wife.
+
+A heartfelt thank you to her for making this a reality!
