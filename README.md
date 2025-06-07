@@ -1,5 +1,5 @@
 # ESP32 - Well Water Pump
-An ESP32-powered system designed to automate water well pump control and water tank management, ideal for cabins and cottages or just filling a tank. Features a user-friendly WiFi web interface for seamless monitoring and control.
+An ESP32-powered system designed to automate water well pump control and water tank management, ideal for cabins and cottages or any setup requiring efficient tank filling. Features a user-friendly WiFi web interface for seamless monitoring and control.
 
 
 ## Support This Project
@@ -28,3 +28,9 @@ If you find this project helpful and it serves you well, consider showing your a
 - Custom Breakout Board for 3V3 and I2C Lines
 
 
+## Pump Logic
+
+<a href="https://github.com/HG-Pilot/WellWaterPump/blob/main/docs/Pump.Logic.png">
+    <img src="https://github.com/HG-Pilot/WellWaterPump/blob/main/docs/Pump.Logic.png" alt="Pump Logic" style="max-width:100%; height:auto;">
+</a>
+The error logic has since been updated and split into separate **Error States**. Each error condition now has its own dedicated state within the system's state machine for better clarity and manageability. Despite this structural change, the core functionality and error-handling mechanisms remain consistent with the original design.
