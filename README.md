@@ -26,7 +26,7 @@ If you find this project helpful and it serves you well, consider showing your a
 - Flexahopper LPT-125 Water Tank
 - Additional External NeoPixel RGBW LED on IO Pin 48
 - Custom Breakout Board for 3V3 and I2C Lines
-
+- [Hardware List with Pictures](https://github.com/HG-Pilot/WellWaterPump/tree/main/docs/parts).
 
 ## Pump Logic
 
