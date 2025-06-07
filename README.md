@@ -11,7 +11,7 @@ If you find this project helpful and it serves you well, consider showing your a
 
 ## Hardware
 
-- ESP32-S3-DEVKITC-1-N16R8V
+- ESP32-S3-DEVKITC-1-N16R8
 - Two-Channel Relay Module (High and Low Level Trigger with Dual Optocoupler Isolation)
 - I2C Analog-to-Digital Converter (ADS1115) with Current Transformer (CT) for current reading
 - Computer ATX Power Supply
@@ -118,6 +118,13 @@ The software integrates multiple features to ensure efficient operation, user co
 - Two WiFi modes: STA (if configured) and AP (as a fallback or if STA is disabled)
 - Web server on port 80 provides real-time data tracking, program control, and configuration
 - NTP time synchronization operates in STA mode when connected to the internet
+
+
+## Flashing and Compiling
+
+This code can be compiled using Arduino IDE version 2.3.6 or higher, provided all necessary libraries are installed and dependencies are resolved. The external RTTTL library, included in the Data folder, must be installed manually. For the VL53L0X sensor, search for "Pololu VL53L0X" in the Library Manager to add the required library.
+
+For a simpler approach, if you are using an ESP32-S3-DEVKITC-1-N16R8, you can flash pre-compiled firmware directly using the `flash.cmd` script located at [https://github.com/HG-Pilot/WellWaterPump/tree/main/build](https://github.com/HG-Pilot/WellWaterPump/tree/main/build). To proceed, connect your ESP32 to your computer, identify the assigned COM port (you may need to install drivers for the onboard USB-to-UART chip), and execute the `flash.cmd` script. Enter the COM port number in uppercase as prompted, then follow the on-screen instructions to complete the flashing process.
 
 
 ## Acknowledgments
