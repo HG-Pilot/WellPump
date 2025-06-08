@@ -92,6 +92,7 @@ The software integrates multiple features to ensure efficient operation, user co
 - ESP32 hardware timer controls well recovery and pumping intervals
 - Well recovery interval allows well water to recover before the next pump cycle begins
 - Desired tank water level is configurable; the ToF sensor at the top indicates less distance equals more water
+- The ToF sensor takes five consecutive readings, stores them in an array, and calculates the median value after sorting. This approach ensures reliability by tolerating up to two failed reads while providing detailed logs for these occurrences.
 - Pump cycles are timed based on your well capacity
 - Onboard RGBW LED displays the current operational state of the system
 - Logs align with State Machine color states and reflect the same LED colors
@@ -109,6 +110,7 @@ The software integrates multiple features to ensure efficient operation, user co
 
 - Stuck pump relay detection logic uses a second relay for emergency pump disconnect
 - Overfilling is prevented with a critical water level check using a moisture sensor
+- In the event of a ToF sensor failure or inability to retrieve a valid reading after two attempts, the system transitions into a **Yellow Error State**, ensuring safety and preventing erroneous operations.
 - Over- and under-current pump protection avoids burning out or dry-running the pump
 - Hysteresis threshold prevents rapid pump cycling when the tank is nearly full
 - System events are logged with a circular buffer, enabling review and troubleshooting
