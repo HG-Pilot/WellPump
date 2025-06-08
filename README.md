@@ -104,7 +104,7 @@ The software integrates multiple features to ensure efficient operation, user co
 - System uptime is calculated and displayed
 - Program states and errors feature verbose logging, timestamping, and color coding
 - ADS calibration adjusts the CT current value
-- The **Update Sensors** button triggers an immediate update and recalculation of temperature, water level, and tank fill percentage, ensuring real-time accuracy.
+- The **Update Sensors** button triggers an immediate update and recalculation of temperature, water level, and tank fill percentage.
 - Dark and light UI modes ensure optimal readability on mobile and desktop devices
 
 ### Safety Features:
