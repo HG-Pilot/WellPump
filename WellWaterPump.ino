@@ -1135,15 +1135,17 @@ void setup() {
   digitalWrite(WATER_PUMP_RELAY_PIN, LOW);
   delay(369);
   digitalWrite(EMERGENCY_PUMP_DISCONNECT_PIN, LOW);
-  logSerial.println("[INFO] ⓘ Relays 1 & 2 Initialization Complete");
+  logSerial.println("[INFO] ⓘ Relays 1 & 2 Initialization is Complete");
   yield();
 
   // Attach interrupt to trigger on any state change
   attachInterrupt(digitalPinToInterrupt(WATER_CRITICAL_LEVEL_SENSOR_PIN), criticalWaterLevelISR, CHANGE);
+  yield();
 
   // Attach interrupt to trigger on falling edge
   attachInterrupt(digitalPinToInterrupt(ADS_ALERT_PIN), adsDataReadyISR, FALLING);
-
+  yield();
+  
   // Kicking Off the Async Web Server
   initWebServer();
   yield();
