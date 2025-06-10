@@ -97,7 +97,7 @@ The software integrates multiple features to ensure efficient operation, user co
 - Onboard RGBW LED displays the current operational state of the system
 - Logs align with State Machine color states and reflect the same LED colors
 - Buzzer, when enabled, provides audible confirmation at the start of each state
-- CT coil reads A/C side current draw and can be re-programmed to read DC ascurrent using ACS758 or some other Hall effect Current Sensor
+- CT coil reads A/C side current draw and can be re-programmed to read DC current using ACS758 or some other Hall effect Current Sensor
 - Water temperature is updated at intervals and recorded pre- and post-pump cycle to display the delta water temperature
 - System time is derived via NTP and supports time zones and DST
 - Approximate tank fill percentage is displayed for semi-circular tanks
