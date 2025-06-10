@@ -6,6 +6,8 @@
 * An ESP32-powered system designed to automate water well pump control
 * and water tank management, ideal for cabins and cottages.
 * Features a user-friendly WiFi web interface for seamless monitoring and control.
+* SETUP:
+* Configure your Arduino IDE as per ARDUINO_IDE_CONFIG!.txt before compiling.
 * LICENSE:
 * This software is licensed under the MIT License.
 * Redistribution, modification, or forks must include this banner.
@@ -1136,6 +1138,8 @@ void setup() {
   delay(369);
   digitalWrite(EMERGENCY_PUMP_DISCONNECT_PIN, LOW);
   logSerial.println("[INFO] ⓘ Relays 1 & 2 Initialization is Complete");
+  yield();
+  delay(10);
   yield();
 
   // Attach interrupt to trigger on any state change
