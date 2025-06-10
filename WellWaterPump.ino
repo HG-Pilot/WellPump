@@ -1,20 +1,20 @@
 /**********************************************************************
- * 2025 (Copyleft) Anton Polishchuk
- * ESP32 Well Water Pump project with Web Interface and WiFi.
- * Authtor Contact: 📫 gmail account: antonvp
- * DESCRIPTION:
- * An ESP32-powered system designed to automate water well pump control
- * and water tank management, ideal for cabins and cottages.
- * Features a user-friendly WiFi web interface for seamless monitoring and control.
- * LICENSE:
- * This software is licensed under the MIT License.
- * Redistribution, modification, or forks must include this banner.
- * DISCLAIMER:
- * - This software is provided "as is," without warranty of any kind.
- * - The author is not responsible for any damages, data loss, or issues
- *   arising from its use, under any circumstances.
- * - For more information, refer to the full license terms.
- **********************************************************************/
+* 2025 (Copyleft) Anton Polishchuk
+* ESP32 Well Water Pump project with Web Interface and WiFi.
+* Authtor Contact: 📫 gmail account: antonvp
+* DESCRIPTION:
+* An ESP32-powered system designed to automate water well pump control
+* and water tank management, ideal for cabins and cottages.
+* Features a user-friendly WiFi web interface for seamless monitoring and control.
+* LICENSE:
+* This software is licensed under the MIT License.
+* Redistribution, modification, or forks must include this banner.
+* DISCLAIMER:
+* - This software is provided "as is," without warranty of any kind.
+* - The author is not responsible for any damages, data loss, or issues
+*   arising from its use, under any circumstances.
+* - For more information, refer to the full license terms.
+**********************************************************************/
 
 // Include Arduino Libraries (RTTTL is external)
 #include <Wire.h>
