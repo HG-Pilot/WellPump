@@ -20,7 +20,7 @@ If you find this project helpful and it serves you well, consider showing your a
 - Passive Buzzer Module
 - SCT-013 10A 1V AC Current Sensor (Split Core Current Transformer)
 - Soil Moisture Sensor (HD-38) for overfill protection
-- Temperature Sensor (SHT35)
+- Temperature Sensor (SHT3X) Water-proof version
 - Time-of-Flight (TOF200C) Sensor with VL53L0X for water level measurement
 - Submersible 12V ECO-WORTHY Water Pump
 - Flexahopper LPT-125 Water Tank
@@ -99,6 +99,7 @@ The software integrates multiple features to ensure efficient operation, user co
 - Buzzer, when enabled, provides audible confirmation at the start of each state
 - CT coil reads A/C side current draw and can be re-programmed to read DC current using ACS758 or some other Hall effect Current Sensor
 - Water temperature is updated at intervals and recorded pre- and post-pump cycle to display the delta water temperature
+- Pressing Boot Button exits Pump Disable and Purple Error modes
 - System time is derived via NTP and supports time zones and DST
 - Approximate tank fill percentage is displayed for semi-circular tanks
 - System uptime is calculated and displayed
