@@ -20,7 +20,7 @@ If you find this project helpful and it serves you well, consider showing your a
 - Passive Buzzer Module
 - SCT-013 10A 1V AC Current Sensor (Split Core Current Transformer)
 - Soil Moisture Sensor (HD-38) for overfill protection
-- Temperature Sensor (SHT3X) Water-proof version
+- Temperature Sensor (SHT3X) Water-proof version with 1m cable
 - Time-of-Flight (TOF200C) Sensor with VL53L0X for water level measurement
 - Submersible 12V ECO-WORTHY Water Pump
 - Flexahopper LPT-125 Water Tank
